@@ -16,7 +16,7 @@ import {useEffect,useState} from 'react'
 import Comment from "./Comment";
 import AddComments from "./AddComments";
 const Post = ({data,user,fetchposts}) => {
-  const host="http://localhost:5000"
+  const host="https://collegeclique-server-aqt9.onrender.com"
   // const host="https://gdsc_clique-1-x1004983.deta.app"
   const id=localStorage.getItem("auth-token");
 //   const handledelete=async()=>{

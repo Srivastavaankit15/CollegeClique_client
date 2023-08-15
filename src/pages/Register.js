@@ -19,7 +19,7 @@ export default function Register() {
 }
     const register=async(e)=>{
         e.preventDefault();
-        const user=await axios.post('http://localhost:5000/api/user/signup',{name, email, password});
+        const user=await axios.post('https://collegeclique-server-aqt9.onrender.com/api/user/signup',{name, email, password});
         // const user=await axios.post('https://gdsc_clique-1-x1004983.deta.app/api/user/signup',{name, email, password});
         const data=user.data;
         localStorage.setItem('auth-token',data.userId);
